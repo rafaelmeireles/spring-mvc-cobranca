@@ -25,7 +25,7 @@ import com.algaworks.cobranca.service.CadastroTituloService;
 @RequestMapping("/titulos")
 public class TituloController {
 	
-	//Tests
+	//Test
 	private static final String CADASTRO_VIEW = "CadastroTitulo";
 	
 	@Autowired
