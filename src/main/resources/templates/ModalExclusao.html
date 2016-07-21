@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<div id="modalExclusao" class="modal fade" tabindex="-1"
+	data-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">Exclusao de Registros</div>
+
+			<div class="modal-body">
+				<span>Confirma a exclusão do registro?</span>
+			</div>
+
+			<div class="modal-footer">
+				<form th:attr="data-base-url='/titulos'" method="post">
+					<input type="hidden" name="_method" value="DELETE" />
+					<button id="btCancelar" type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-primary">Excluir</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</html>
